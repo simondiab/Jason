@@ -29,4 +29,9 @@ the JSONProcessor instances running in AWS EC2 or Lambda, and make them scale dy
 ## Lessons Learned
 * I didn't accomplish the task in time, but I think I have the start of relatively solid design. The take-away is that I spent too much 
 time thinking of the overall system instead of solving the problem at hand.
-* I have Maven experience, but not a lot of Gradle, so the project setup took a little bit more time than I would have wanted. 
+* There is a small amount of logging, but this needs to be cleaned-up/sanitised.
+* There is only one automated test. It's an integration test instead of a unit test. It just runs the whole process from end-to-end.
+* I wrote raw SQL queries instead of integrating an ORM framework like Hibernate. I think I made the right call given the time constraints, as I think setting up Hibernate would have taken time.
+* I have Maven experience, but not a lot of Gradle, so the initial project setup took a little bit more time than I would have wanted. 
+
+So the main take-away is that I had to prioritise what tasks to spend time on in order to have something worth submitting, so things like unit testing fell by the wayside. Hopefully I accomplished a coherent design that could be supported in the futue
